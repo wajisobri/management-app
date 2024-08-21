@@ -1,66 +1,78 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="" rel="noopener">
+ <img width=300px height=150px src="https://protemus.id/assets/images/logo.png" alt="Project logo"></a>
 </p>
 
-## About Laravel
+<h3 align="center">Aplikasi Manajemen Sederhana</h3>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📝 Table of Contents
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Built Using](#built_using)
+- [Authors](#authors)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🧐 About <a name = "about"></a>
 
-## Learning Laravel
+The purpose of this project is to develop a simple data management application using Laravel 9, designed to streamline the management and organization of project-related data. This application includes essential features such as user registration, email verification, login, and logout to ensure secure access. Users can perform CRUD (Create, Read, Update, Delete) operations on project records, which allows for efficient handling of project details. Additionally, the application supports file uploads with a user-friendly drag-and-drop interface, enabling users to manage and attach files to their projects seamlessly.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The user interface of the application is designed with flexibility, using Bootstrap or a free template to ensure an aesthetically pleasing and responsive design. The backend is structured using Laravel migrations to create and manage the database schema, ensuring that the data is well-organized and easy to maintain. This project aims to provide a robust yet simple solution for managing project information and associated files, enhancing productivity and data organization for users.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Laravel Sponsors
+### Prerequisites
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+What things you need to install the software and how to install them.
 
-### Premium Partners
+1. PHP 8.1.x
+2. MySQL 5.7 or MySQL 8
+3. Composer
+4. NodeJS (20.16.0)
+5. NPM (10.8.1) or Yarn or PNPM
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Installing
 
-## Contributing
+A step by step series of examples that tell you how to get a development env running.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Say what the step will be
 
-## Code of Conduct
+```
+composer install
+npm install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+cp .env.example .env
+php artisan key:generate
+php artisan storage:link
+```
 
-## Security Vulnerabilities
+Please configure your database configuration on .env file
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```
+php artisan serve
+```
 
-## License
+## 🔧 Running the tests <a name = "tests"></a>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Explain how to run the automated tests for this system.
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+php artisan test --testsuite=Unit
+```
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [Laravel](https://laravel.com/) - Server Framework
+- [MySQL](https://www.mysql.com/) - Database
+- [NodeJS](https://nodejs.org/) - Support (Laravel Mix)
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@wajisobri](https://github.com/wajisobri)
