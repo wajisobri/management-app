@@ -35,7 +35,7 @@ class ProjectDataTable extends DataTable
                 return $project->deadline->format('l, Y/m/d H:i');
             })
             ->addColumn('created_by', function (Project $project) {
-                return $project->userCreated->name;
+                return $project->userCreated->name ?? '-';
             })
             ->addColumn('created_at', function (Project $project) {
                 return $project->created_at->format('Y/m/d H:i');

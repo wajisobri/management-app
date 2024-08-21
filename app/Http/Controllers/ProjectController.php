@@ -56,8 +56,8 @@ class ProjectController extends Controller
                 'project_name' => $request->project_name,
                 'project_description' => $request->project_description,
                 'deadline' => $request->deadline,
-                'created_by' => auth()->id(),
-                'updated_by' => auth()->id(),
+                'created_by' => auth()->id() ?? null,
+                'updated_by' => auth()->id() ?? null,
             ]);
 
             return response()->json([

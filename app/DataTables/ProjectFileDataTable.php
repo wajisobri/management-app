@@ -54,7 +54,7 @@ class ProjectFileDataTable extends DataTable
                 }
             })
             ->addColumn('created_by', function (ProjectFile $projectFile) {
-                return $projectFile->createdBy->name;
+                return $projectFile->createdBy->name ?? '-';
             })
             ->addColumn('created_at', function (ProjectFile $projectFile) {
                 return $projectFile->created_at->format('Y/m/d H:i');
